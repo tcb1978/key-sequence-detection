@@ -10,15 +10,16 @@ window.addEventListener('keyup', (e) => {
     pressed.splice(keyCodeEnd, keCodeFront);
     // does array contain the characters in keyCode
     if (pressed.join('').includes(keyCode)) {
-        console.log('includes keyCode');
         cornify_add();
     }
-    console.log(pressed);
 });
 
+// add button with cornify_add()
 const unicorn = document.querySelector('button');
 function gimmieUnicorn() {
-    console.log('click');
     cornify_add();
 };
 unicorn.addEventListener('click', gimmieUnicorn);
+
+
+
